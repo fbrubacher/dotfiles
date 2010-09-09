@@ -96,6 +96,7 @@
 (require 'starter-kit-perl)
 (require 'starter-kit-ruby)
 (require 'starter-kit-js)
+(global-set-key (kbd "C-.") 'repeat)
 (defun duplicate-line()
   (interactive)
   (move-beginning-of-line 1)
@@ -105,7 +106,16 @@
   (next-line 1)
   (yank)
 )
+(defun open-previous-line ()
+  (interactive)
+  (previous-line 1)
+  (next-line 1)
+  (move-beginning-of-line 1)
+  (open-line 1)
+  (forward-button 0)
+)
 (global-set-key (kbd "C-x c") 'duplicate-line)
+(global-set-key (kbd "C-x y") 'open-previous-line)
 
 (defadvice switch-to-buffer (before save-buffer-now activate)
   (when buffer-file-name (save-buffer)))
@@ -127,7 +137,7 @@
 ;(add-to-list 'load-path (concat rsense-home "/magit-0.8.2"))
 (add-to-list 'exec-path "/usr/local/bin")
 (setq magit-git-executable "/usr/local/bin/git")
-
+(require 'ruby-electric)
 (require 'magit)
 ;(global-set-key (kbd "C-x C-g") 'magit-status)
 
@@ -178,4 +188,8 @@
 (if (file-exists-p user-specific-dir)
   (mapc #'load (directory-files user-specific-dir nil ".*el$")))
 
-;;; init.el ends here
+(require 'highlight-current-line)
+(highlight-current-line-on t)
+ 
+;; To customize the background color
+(set-face-background 'highlight-current-line-face "light red")
