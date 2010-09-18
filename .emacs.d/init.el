@@ -190,6 +190,8 @@
 
 (require 'highlight-current-line)
 (highlight-current-line-on t)
- 
+(require 'undo-tree)
+(global-undo-tree-mode)
+(server-start)
 ;; To customize the background color
 (set-face-background 'highlight-current-line-face "light red")
