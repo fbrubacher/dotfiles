@@ -1,0 +1,5 @@
+#name : debugger
+#key : dbug
+#group : collections
+# --
+require 'ruby-debug'; debugger

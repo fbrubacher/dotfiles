@@ -139,7 +139,6 @@
 (setq magit-git-executable "/usr/local/bin/git")
 (require 'ruby-electric)
 (require 'magit)
-;(global-set-key (kbd "C-x C-g") 'magit-status)
 
 (add-hook 'ruby-mode-hook
           (lambda ()
@@ -223,3 +222,10 @@
   (setq cdt-source-path "/Users/federicobrubacher/clojure/clojure-1.2.0/src/jvm:/Users/federicobrubacher/clojure/clojure-1.2.0/src/clj:/Users/federicobrubacher/clojure/clojure-contrib-1.2.0/src/main/clojure:")
   (load-file (format "%s/ide/emacs/cdt.el" cdt-dir)))
 (global-linum-mode 1)
+(defun print-class-path
+  (println (seq (.getURLs (java.lang.ClassLoader/getSystemClassLoader)))))
+(add-to-list 'load-path
+             "~/.emacs.d/plugins/yasnippet-0.6.1c")
+(require 'yasnippet) ;; not yasnippet-bundle
+(yas/initialize)
+(yas/load-directory "~/.emacs.d/plugins/yasnippet-0.6.1c/snippets")
