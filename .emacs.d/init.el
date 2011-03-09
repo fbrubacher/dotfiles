@@ -153,6 +153,7 @@
 (add-hook 'lisp-mode-hook             (lambda () (paredit-mode +1)))
 (add-hook 'lisp-interaction-mode-hook (lambda () (paredit-mode +1)))
 
+
 (add-hook 'slime-repl-mode-hook (lambda () (paredit-mode +1)))
 ;; Stop SLIME's REPL from grabbing DEL,
     ;; which is annoying when backspacing over a '('
@@ -216,7 +217,7 @@
   "A minor mode that disables the arrow-keys, pg-up/down, delete
   and backspace."  t " no-easy-keys"
   'no-easy-keys-minor-mode-map :global t)
-(no-easy-keys-minor-mode 1)
+(no-easy-keys-minor-mode 0)
 (progn
   (setq cdt-dir "/Users/federicobrubacher/clojure/cdt")
   (setq cdt-source-path "/Users/federicobrubacher/clojure/clojure-1.2.0/src/jvm:/Users/federicobrubacher/clojure/clojure-1.2.0/src/clj:/Users/federicobrubacher/clojure/clojure-contrib-1.2.0/src/main/clojure:")
@@ -229,3 +230,15 @@
 (require 'yasnippet) ;; not yasnippet-bundle
 (yas/initialize)
 (yas/load-directory "~/.emacs.d/plugins/yasnippet-0.6.1c/snippets")
+(require 'whitespace)
+(require 'grep-ed)
+(autoload 'whitespace-mode           "whitespace" "Toggle whitespace visualization."        t)
+(defvar BASEDIR (expand-file-name "~/.emacs.d/"))
+
+(add-to-list 'load-path (concat BASEDIR "site-lisp"))
+(add-to-list 'exec-path (concat BASEDIR "bin"))
+
+(defun load-setting (name)
+  (load (concat BASEDIR "settings/" name)))
+;; Javascript
+;;(load-setting "javascript")
