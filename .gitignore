@@ -1,85 +1,85 @@
-      .CFUserTextEncoding
-        .DS_Store
-        .Trash/
-        .amplify/
-        .android/
-        .aws/
-        .bagpipe/
-        .bash_history
-        .bash_profile
-        .bashrc
-        .blazerc
-        .cache/
-        .cargo/
-        .cdk/
-        .cups/
-        .docker/
-        .emulator_console_auth_token
-        .exoblazerc
-        .expo/
-        .fzf.bash
-        .fzf.zsh
-        .gitconfig
-        .gradle/
-        .hammerspoon/
-        .ipython/
-        .lemminx/
-        .lesshst
-        .local/
-        .m2/
-        .mdproxy_remote_host
-        .npm/
-        .profile
-        .redhat/
-        .rustup/
-        .secureConnect/
-        .ssh/
-        .sso/
-        .tig_history
-        .vim/ftplugin/
-        .viminfo
-        .vscode/
-        .yarnrc
-        .zcompdump
-        .zlogin
-        .zlogout
-        .zprezto/
-        .zpreztorc
-        .zprofile
-        .zsh_history
-        .zshenv
-        .zshrc
-        A1.py
-        AWSCLIV2.pkg
-        AndroidStudioProjects/
-        Applications/
-        ClionProjects/
-        Desktop/
-        Documents/
-        Downloads/
-        Google Drive
-        IdeaProjects/
-        Library/
-        Movies/
-        Music/
-        Pictures/
-        Public/
-        a.py
-        auto_refresh.sh
-        b.ppy
-        b.py
-        bin/
-        fede.sql
-        getExperimentSegment_filterWithExcludeTa
-        hg rmphonesky_release+Phonesky_26_4_20_
-        homebrew/
-        mdproxy/
-        node_modules/
-        out1.txt
-        outa.txt
-        package-lock.json
-        package.json
-        pepe.proto
-        proto.proto
-        src/
-        wanted
+.CFUserTextEncoding
+.DS_Store
+.Trash/
+.amplify/
+.android/
+.aws/
+.bagpipe/
+.bash_history
+.bash_profile
+.bashrc
+.blazerc
+.cache/
+.cargo/
+.cdk/
+.cups/
+.docker/
+.emulator_console_auth_token
+.exoblazerc
+.expo/
+.fzf.bash
+.fzf.zsh
+.gitconfig
+.gradle/
+.hammerspoon/
+.ipython/
+.lemminx/
+.lesshst
+.local/
+.m2/
+.mdproxy_remote_host
+.npm/
+.profile
+.redhat/
+.rustup/
+.secureConnect/
+.ssh/
+.sso/
+.tig_history
+.vim/ftplugin/
+.viminfo
+.vscode/
+.yarnrc
+.zcompdump
+.zlogin
+.zlogout
+.zprezto/
+.zpreztorc
+.zprofile
+.zsh_history
+.zshenv
+.zshrc
+A1.py
+AWSCLIV2.pkg
+AndroidStudioProjects/
+Applications/
+ClionProjects/
+Desktop/
+Documents/
+Downloads/
+Google Drive
+IdeaProjects/
+Library/
+Movies/
+Music/
+Pictures/
+Public/
+a.py
+auto_refresh.sh
+b.ppy
+b.py
+bin/
+fede.sql
+getExperimentSegment_filterWithExcludeTa
+hg rmphonesky_release+Phonesky_26_4_20_
+homebrew/
+mdproxy/
+node_modules/
+out1.txt
+outa.txt
+package-lock.json
+package.json
+pepe.proto
+proto.proto
+src/
+wanted
