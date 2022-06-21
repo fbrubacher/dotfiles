@@ -9,7 +9,8 @@ call plug#begin()
 "   - Avoid using standard Vim directory names like 'plugin'
 
 " Make sure you use single quotes
-
+" Find files using Telescope command-line sugar.
+nnoremap <silent> <C-p> <cmd>lua require('telescope.builtin').find_files()<cr>
 nnoremap <leader>ff <cmd>lua require('telescope.builtin').find_files()<cr>
 nnoremap <leader>fg <cmd>lua require('telescope.builtin').live_grep()<cr>
 nnoremap <leader>fb <cmd>lua require('telescope.builtin').buffers()<cr>
@@ -22,4 +23,10 @@ Plug 'scrooloose/nerdtree'
 Plug 'leafgarland/typescript-vim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
+" LSP client and AutoInstaller
+Plug 'neovim/nvim-lspconfig'
+Plug 'williamboman/nvim-lsp-installer'
+Plug 'mfussenegger/nvim-jdtls'
+" TreeSitter
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 call plug#end()
